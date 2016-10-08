@@ -19,6 +19,7 @@ check your logic, target The Next Generation Stardate calculator here: [http://t
 
 # Stardate Examples
 
+
 ## Stardate Construct
 
     $stardate = new Stardate(); // now
