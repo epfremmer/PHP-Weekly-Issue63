@@ -1,8 +1,10 @@
 Challenge 063: Stardate
 ==========================================
 
+[![Build Status](https://travis-ci.org/epfremmer/PHP-Weekly-Issue63.svg?branch=master)](https://travis-ci.org/epfremmer/PHP-Weekly-Issue63)
 [![Coverage Status](https://coveralls.io/repos/github/epfremmer/PHP-Weekly-Issue63/badge.svg?branch=master)](https://coveralls.io/github/epfremmer/PHP-Weekly-Issue63?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/epfremmer/PHP-Weekly-Issue63/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/epfremmer/PHP-Weekly-Issue63/?branch=master)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/66365e8d-c6ac-4835-a7e8-00978e5bed1f/mini.png)](https://insight.sensiolabs.com/projects/66365e8d-c6ac-4835-a7e8-00978e5bed1f)
 
 # Overview
 
