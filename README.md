@@ -26,31 +26,43 @@ check your logic, target The Next Generation Stardate calculator here: [http://t
 
 ## Stardate Construct
 
-    $stardate = new Stardate(); // now
-    $stardate = new Stardate('now'); // now
-    $stardate = new Stardate(1234.5); // stardate 1234.5 (Sat Nov 08 2319 12:02:11 GMT-0600 (CST))
+```php
+$stardate = new Stardate(); // now
+$stardate = new Stardate('now'); // now
+$stardate = new Stardate(1234.5); // stardate 1234.5 (Sat Nov 08 2319 12:02:11 GMT-0600 (CST))
+```
     
 ## Create from Stardate
 
-    $stardate = Stardate::createFromStardate(1234.5);
+```php
+$stardate = Stardate::createFromStardate(1234.5);
+```
     
 ## Create from Timestamp
 
-    $stardate = Stardate::createFromTimestamp(time());
-    $stardate = Stardate::createFromTimestamp(1475891080);
+```php
+$stardate = Stardate::createFromTimestamp(time());
+$stardate = Stardate::createFromTimestamp(1475891080);
+```
     
 ## Create from Date String
 
-    $stardate = Stardate::createFromDateString('Sat Nov 08 2319 12:02:11 GMT-0600 (CST)');
-    $stardate = Stardate::createFromDateString('Sat Nov 08 2319 12:02:11', new DateTimeZone('America/Los_Angeles'));
+```php
+$stardate = Stardate::createFromDateString('Sat Nov 08 2319 12:02:11 GMT-0600 (CST)');
+$stardate = Stardate::createFromDateString('Sat Nov 08 2319 12:02:11', new DateTimeZone('America/Los_Angeles'));
+```
 
 ## Create from DateTime
 
-    $stardate = Stardate::createFromDateTime(new DateTime('Sat Nov 08 2319 12:02:11 GMT-0600 (CST)'));
-    $stardate = Stardate::createFromDateTime(new DateTime('Sat Nov 08 2319 12:02:11', new DateTimeZone('America/Los_Angeles')););
+```php
+$stardate = Stardate::createFromDateTime(new DateTime('Sat Nov 08 2319 12:02:11 GMT-0600 (CST)'));
+$stardate = Stardate::createFromDateTime(new DateTime('Sat Nov 08 2319 12:02:11', new DateTimeZone('America/Los_Angeles')));
+```
     
 ## Create from Date Format
 
-    $stardate = Stardate::createFromFormat(DateTime::RFC2822, 'Sat, 08 Nov 2319 12:02:11 -0800');
-    $stardate = Stardate::createFromFormat('D, d M Y H:i:s', 'Sat, 08 Nov 2319 12:02:11', new DateTimeZone('America/Los_Angeles'));
+```php
+$stardate = Stardate::createFromFormat(DateTime::RFC2822, 'Sat, 08 Nov 2319 12:02:11 -0800');
+$stardate = Stardate::createFromFormat('D, d M Y H:i:s', 'Sat, 08 Nov 2319 12:02:11', new DateTimeZone('America/Los_Angeles'));
+```
     
