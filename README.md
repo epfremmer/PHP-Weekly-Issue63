@@ -1,6 +1,9 @@
 Challenge 063: Stardate
 ==========================================
 
+[![Coverage Status](https://coveralls.io/repos/github/epfremmer/PHP-Weekly-Issue63/badge.svg?branch=master)](https://coveralls.io/github/epfremmer/PHP-Weekly-Issue63?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/epfremmer/PHP-Weekly-Issue63/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/epfremmer/PHP-Weekly-Issue63/?branch=master)
+
 # Overview
 
 In preparation for interplanetary space travel and humans living on planets other than earth, we are going to need a new 
@@ -18,7 +21,6 @@ For dates before July 5, 2318, use negative numbers to represent Stardates (None
 check your logic, target The Next Generation Stardate calculator here: [http://trekguide.com/Stardates.htm#TNGcalculator.](http://trekguide.com/Stardates.htm#TNGcalculator)
 
 # Stardate Examples
-
 
 ## Stardate Construct
 
