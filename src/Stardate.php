@@ -145,7 +145,10 @@ class Stardate extends DateTime
      */
     public static function createFromFormat($format, $time, $timezone = null)
     {
-        return self::createFromDateTime(parent::createFromFormat($format, $time, $timezone));
+        return self::createFromDateTime($timezone instanceof DateTimeZone
+            ? parent::createFromFormat($format, $time, $timezone)
+            : parent::createFromFormat($format, $time)
+        );
     }
 
     /**
