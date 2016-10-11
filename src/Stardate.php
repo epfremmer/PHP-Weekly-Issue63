@@ -87,12 +87,11 @@ class Stardate extends DateTime
      * Convert epoch timestamp to federation stardate
      *
      * @param int $timestamp
-     * @param int $precision
      * @return float
      */
-    public static function timestampToStardate($timestamp, $precision = 1)
+    public static function timestampToStardate($timestamp)
     {
-        return (float) round(($timestamp - self::STARDATE_EPOCH) / self::SECONDS_PER_STARDATE, $precision);
+        return (float) round(($timestamp - self::STARDATE_EPOCH) / self::SECONDS_PER_STARDATE, 4);
     }
 
     /**
@@ -114,7 +113,7 @@ class Stardate extends DateTime
      */
     public static function createFromTimestamp($timestamp)
     {
-        return new static(self::timestampToStardate($timestamp, 100));
+        return new static(self::timestampToStardate($timestamp));
     }
 
     /**
@@ -137,7 +136,7 @@ class Stardate extends DateTime
      */
     public static function createFromDateTime(DateTime $datetime)
     {
-        return new static(self::timestampToStardate($datetime->getTimestamp(), 100));
+        return new static(self::timestampToStardate($datetime->getTimestamp()));
     }
 
     /**
